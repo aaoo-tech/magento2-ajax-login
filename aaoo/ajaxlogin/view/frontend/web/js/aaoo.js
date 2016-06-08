@@ -64,6 +64,7 @@
                             $('.error-message span').text(response.message);
                             $('.error-message').addClass('_show');
                         } else {
+                            $('.error-message').removeClass('_show');
                             $('.success-message span').text(response.message);
                             $('.success-message').addClass('_show');
                             customerData.invalidate(['customer']);
