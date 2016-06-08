@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2016 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page layout="3columns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <!-- for css file -->
+        <css src="aaoo_ajaxlogin::css/main.css"/>
+
+        <!-- for js file -->
+        <script src="aaoo_ajaxlogin::js/aaoo.js"/>
+    </head>
+    <body>
+        <container name="Ajax Login" htmlTag="div" htmlClass="aaoo ajax-login">
+            <block class="aaoo\ajaxlogin\Block\Ajax\Index" name="ajax_index" template="ajax/index.phtml">
+            </block>
+        </container>
+        <move element="Ajax Login" destination="body" before="-" /> 
+    </body>
+</page>

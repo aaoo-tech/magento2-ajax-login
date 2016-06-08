@@ -1,0 +1,25 @@
+    ._overflow_hidden { overflow: hidden; }
+    .aaoo.ajax-login { opacity: 0; z-index: -1; width: 100%; height: 100%; position: fixed; top: 0; left: 0; }
+    .aaoo.ajax-login._show { opacity: 1; z-index: 10; }
+    .aaoo.ajax-login .ajax-background { background: rgba(0,0,0,0.5); position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 1000; }
+    .aaoo.ajax-login .ajax-form { box-shadow: 0px 0px 10px 2px #c2c2c2; /*border-radius: 10px;*/ position: absolute; left: 0; right: 0; width: 500px; margin: 0 auto; padding: 50px; background: #FFF; z-index: 2000; }
+    .aaoo.ajax-login .ajax-form .field { margin-bottom: 20px; }
+
+    .aaoo.ajax-login .ajax-form h2 { margin-bottom: 40px; }
+
+    .aaoo.ajax-login .ajax-form button.action-close {background-image: none; background: none; -moz-box-sizing: content-box; border: 0; box-shadow: none; line-height: inherit; margin: 0; padding: 0; text-shadow: none; font-weight: 400; display: inline-block; text-decoration: none; position: absolute; right: 5px; top: 5px; }
+    .aaoo.ajax-login .ajax-form button.action-close:before {-webkit-font-smoothing: antialiased; font-size: 16px; line-height: 16px; color: #8f8f8f; content: '\e616'; font-family: 'luma-icons'; margin: 0; vertical-align: top; display: inline-block; font-weight: normal; overflow: hidden; speak: none; text-align: center;}
+
+    .aaoo.ajax-login .ajax-form .actions-toolbar .secondary { float: right; }
+
+    .aaoo.ajax-login .ajax-form .create-account { border-top: 1px solid #c2c2c2; margin: 20px 0px; padding-top: 20px; text-align: center; }
+    .aaoo.ajax-login .ajax-form .create-account span { padding: 0 10px; }
+
+    .aaoo.ajax-login .ajax-form .loading { display: none; }
+    .aaoo.ajax-login .ajax-form .loading._show { display: inline-block; background: #1979c3; border-radius: 3px; }
+    .aaoo.ajax-login .ajax-form .loading img { height: 22px; padding: 5px 24px; vertical-align:bottom; }
+
+    .error-message { color: #e02b27; font-size: 1.3rem; position: relative; margin-bottom: 10px; display: none; }
+    .aaoo .message._show { display: block; }
+    .error-message span:before { -webkit-font-smoothing: antialiased; font-size: 24px; line-height: 24px; color: #b30000; content: '\e61f'; font-family: 'luma-icons'; vertical-align: middle; display: inline-block; font-weight: normal; overflow: hidden; speak: none; width: 45px; text-align: center; }
+    .success-message { color: #006400; font-size: 1.3rem; position: relative; margin-bottom: 10px; display: none; }

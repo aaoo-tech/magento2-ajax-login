@@ -1,0 +1,44 @@
+<?php
+/**
+ * Copyright © 2015 aaoocommerce. All rights reserved.
+ */
+?>
+<?php
+/**
+ * {{controller}} {{action}} template
+ *
+ * @var $block \Aaoo\Ajaxlogin\Block\Login\Index
+ */
+?>
+<div class="ajax-background"></div>
+<div class="ajax-form form-holder">
+    <button class="action-close" data-role="closeBtn" type="button">
+        <span></span>
+    </button>
+    <h2 class="title"> <span class="base">Customer Login</span> </h2>
+    <div class="message error-message"><span></span></div>
+    <div class="message success-message"><span></span></div>
+    <form action="" data-mage-init='{"validation":{}}' method="post" >
+        <div class="field field-email required">
+            <div class="control">
+                <input type="text" name="username" placeholder="Email" data-validate="{required:true, 'validate-email':true}" />
+            </div>
+        </div>
+        <div class="field field-password required">
+            <div class="control">
+                <input type="password" name="password" placeholder="Password" data-validate="{ required:true, 'validate-password':true }" />
+            </div>
+        </div>
+        <div class="actions-toolbar">
+            <div class="primary"><button type="submit" class="action login primary"><span>Login</span></button></div>
+            <div class="loading"><img src="<?php /* @escapeNotVerified */ echo $block->getViewFileUrl('images/loader-1.gif'); ?>" alt="<?php /* @escapeNotVerified */ echo __('Loading...') ?>"></div>
+            <div class="secondary"><a class="action remind" href="/customer/account/forgotpassword/"><span>Forgot Your Password?</span></a></div>
+        </div>
+        <div class="create-account"><span>Need an account?</span> <a class="action remind" href="/customer/account/create/"><span>Create New</span></a></div>
+    </form>
+</div>
+
+<script>
+    var config_class = '<?php echo $block->getClass() ?>';
+    console.log(config_class);
+</script>
