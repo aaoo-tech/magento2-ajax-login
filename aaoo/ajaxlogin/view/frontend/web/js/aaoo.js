@@ -61,12 +61,12 @@
                         $('.aaoo.ajax-login .ajax-form .actions-toolbar .primary').show();
                         $('.loading').removeClass('_show');
                         if (response.errors === true) {
-                            $('.error-message span').text(response.message);
-                            $('.error-message').addClass('_show');
+                            $('.aaoo.ajax-login .error-message span').text(response.message);
+                            $('.aaoo.ajax-login .error-message').addClass('_show');
                         } else {
-                            $('.error-message').removeClass('_show');
-                            $('.success-message span').text(response.message);
-                            $('.success-message').addClass('_show');
+                            $('.aaoo.ajax-login .error-message').removeClass('_show');
+                            $('.aaoo.ajax-login .success-message span').text(response.message);
+                            $('.aaoo.ajax-login .success-message').addClass('_show');
                             customerData.invalidate(['customer']);
                             customerData.invalidate(['compare-products']);
                             customerData.invalidate(['last-ordered-items']);
@@ -83,7 +83,7 @@
             });
         }
         // console.log(config_class);
-        if(config_class != ''){
-            aaoo_ajax_login(config_class);
+        if(config_login_class != ''){
+            aaoo_ajax_login(config_login_class);
         }
     });

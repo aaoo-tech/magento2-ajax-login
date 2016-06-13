@@ -15,7 +15,7 @@
     </head>
     <body>
         <container name="Ajax Login" htmlTag="div" htmlClass="aaoo ajax-login">
-            <block class="aaoo\ajaxlogin\Block\Ajax\Index" name="ajax_index" template="ajax/index.phtml">
+            <block class="aaoo\ajaxlogin\Block\Ajax\Index" name="ajax_login_index" template="ajax/index.phtml">
             </block>
         </container>
         <move element="Ajax Login" destination="body" before="-" /> 
