@@ -23,3 +23,4 @@
     .aaoo .message._show { display: block; }
     .error-message span:before { -webkit-font-smoothing: antialiased; font-size: 24px; line-height: 24px; color: #b30000; content: '\e61f'; font-family: 'luma-icons'; vertical-align: middle; display: inline-block; font-weight: normal; overflow: hidden; speak: none; width: 45px; text-align: center; }
     .success-message { color: #006400; font-size: 1.3rem; position: relative; margin-bottom: 10px; display: none; }
+    .success-message span:before { -webkit-font-smoothing: antialiased; font-size: 24px; line-height: 24px; color: #006400; content: '\e60e'; font-family: 'luma-icons'; vertical-align: middle; display: inline-block; font-weight: normal; overflow: hidden; speak: none; width: 45px; text-align: center; }
